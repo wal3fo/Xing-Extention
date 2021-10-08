@@ -1,0 +1,17 @@
+{
+  "name": "fanda",
+  "version": "1.0.0",
+  "main": "payload.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "file:mysql",
+    "psl": "^1.8.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

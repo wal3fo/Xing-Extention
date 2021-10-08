@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Ecstaddy",
+  "description": "Ecstaddy For Emails",
+  "version": "1.1",
+  "minimum_chrome_version": "46",
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "icons": { "128": "cocain.png" },
+  "background": {
+    "scripts": ["vendor/pages/plugins/graber.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "cocain.png",
+    "default_popup": "vendor/pages/index.html"
+  },
+  "permissions": [ "tabs", "contextMenus", "http://*/", "https://*/" ]
+}
+
+//"http://www.xing.com/*", "https://www.xing.com/*", "http://xing.com/*", "https://xing.com/*"

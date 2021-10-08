@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EcstAddy</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback">
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  </head>
+  <body class="dark-mode bodyStyle">
+    <div class="wrapper">
+      <div class="content-wrapper">
+        <div class="content-header"></div>
+        <section class="content">
+          <div class="container-fluid">
+            <div class="row rowStyle">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card card-danger">
+                      <div class="card-header">
+                        <h3 class="card-title">
+                          <center>
+                            <!-- <div class="header-text">Softechers</div> -->
+                            <form class="d-flex">
+                              <div class="btn btn-orangy btn-xs" id="btnHome"><i class="fas fa-home"></i>Home</div>
+                              <input class="form-control mr-sm-2" type="search" id="SearchProfil" placeholder="Search" aria-label="Search">
+                              <button class="btn btn-outline-success btn-xs">Search</button>
+                            </form>
+                          </center>
+                        </h3>
+                      </div>
+                      <div class="card-body">
+                        <div role="alert" id="Alertbox" style="margin-bottom: 0;"></div>
+                        <button style="margin-right: 2%;margin-bottom: 5px; display: none;" type="button" class="btn btn-info btn-xs" id="startCopy">
+                          <li class="far fa-copy"></li> Copy
+                        </button>
+
+                        <div class="card p-3" id="ProfilCard">
+                          <div class="d-flex align-items-center">
+                            <div class="w-100">
+                              <div class="cardpadding">
+                                <img class="cardimg" id="FULLPROFIL" src="https://profile-images.xing.com/static/nobody_m.256x256.jpg" class="rounded">
+                                <h4 class="mb-0 mt-0 cardTitle" id="FULLNAME"></h4>
+                                <span id="FULLJOB"></span>
+                              </div>
+                              <div class="p-2 mt-2 bg-primaryjustify-content-between rounded text-white stats">
+                                <div class="d-flex flex-column" style="display: block!important;">
+                                  <span class="articles">Country :</span>
+                                  <span class="number1" id="FULLCITY"></span>
+                                </div>
+                                <div class="d-flex flex-column" style="display: block!important;">
+                                  <span class="followers">Employee :</span>
+                                  <span class="number2" id="FULLSINCE"></span>
+                                </div>
+                                <div class="d-flex flex-column" style="display: block!important;">
+                                  <span class="rating">Company :</span>
+                                  <span class="number3" id="FULLCOMPANY"></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-12" id="AlertResult" style="display: none;">
+                            <p id="ResultEmail"></p>
+                            <hr id="LTSeperator">
+                            <ul class="list-group" id="AlertListBox"></ul>
+                            <br>
+                            <div class="alert alert-warning">Or write the domain name :</div>
+                            <div class="d-flex">
+                              <input class="form-control mr-sm-2" type="search" id="SearchDomainInput" placeholder="Search" aria-label="Search">
+                              <button class="btn btn-outline-success btn-xs" id="SearchDomain">Search</button>
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+                        <div class="tableRow" style="display: flex;">
+                          <button style="margin-right: 2%; display: none;" type="button" class="btn btn-success btn-xs" id="startSearch">
+                            <i class="fas fa-search"></i> Search </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/graber.js"></script>
+  </body>
+</html>
